@@ -11,67 +11,39 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Christian Wu</div>
+    <div class="text-3xl py-3 font-bold">Software Engineer and Full Stack Developer</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+I am a passionate and versatile Full Stack Developer, dedicated to crafting innovative and seamless digital experiences. With a keen eye for detail and a love for problem-solving, I thrive on turning complex challenges into elegant solutions.
+
       </text>
     </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
+    <div class="mt-8  ">
+      <a class="btn bg-blue-500 text-white" href="https://github.com/Chris5613" target="_blank"> Let's connect!</a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="RankRiddler"
+    img="/rank.jpg"
+    desc="RankRiddler is an exciting web-based game that puts your gaming instincts to the ultimate test. In this captivating and immersive experience, you'll encounter profiles of diverse gamers from various gaming realms, each with their unique skills and achievements. Your mission is to decipher their ranks based on their profiles, stats, and gameplay journey. "
+    url="https://www.rankriddler.com/"
     badge="NEW"
+    github = "Github"
+    github_url="https://github.com/Chris5613/RankRiddler"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    <HorizontalCard
+    title="Gamerconnect"
+    img="/gamer.png"
+    desc="GamerConnect, the ultimate social media platform designed exclusively for gamers by gamers. Step into a virtual haven that celebrates the gaming community, where like-minded enthusiasts unite, forge friendships, and share their passion for the digital universe.Connect with fellow gamers from all corners of the globe and explore a world of gaming camaraderie."
+    url="https://gamerconnect.gitlab.io/module3-project-gamma/"
+    github = "Github"
+    github_url="https://github.com/Chris5613/Gamerconnect "
   />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
